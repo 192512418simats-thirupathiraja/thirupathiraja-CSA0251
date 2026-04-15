@@ -1,0 +1,13 @@
+#include <stdio.h>
+void rev(){
+    char ch;
+    scanf("%c",&ch);
+    if(ch!='\n'){
+        rev();
+        printf("%c",ch);
+    }
+}
+int main(){
+    rev();
+    return 0;
+}
